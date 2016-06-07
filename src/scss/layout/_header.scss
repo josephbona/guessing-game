@@ -1,0 +1,35 @@
+.game-header {
+	@include clearfix();
+	background: rgba(#000, .40);
+}
+.launch-settings {
+	display: block;
+	width: 65px;
+	height: 65px;
+	font-size: 45px;
+	text-align: center;
+	line-height: 65px;
+	cursor: pointer;
+	color: #D9D9D9;
+	float: left;
+}
+.score {
+	float: right;
+	text-align: center;
+	font-size: 16px;
+	padding: 9.5px 10px;
+	line-height: 1;
+	color: white;
+
+	span {
+		display: block;
+	}
+	.guesses-remaining {
+		font-size: 30px;
+		font-weight: bold;
+
+	}
+	&.is-green {
+		background-color: $brand-success;
+	}
+}

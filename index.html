@@ -5,12 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Guess That Number!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type='text/css' rel="stylesheet" src="css/main.css"></script>
+	<link href="css/main.min.css" rel="stylesheet" />
 </head>
 <body>
 	<section class="game">
-		<header>
-
+		<header class="game-header">
+			<a class="launch-settings">
+				<i class="fa fa-gear"></i>
+			</a>
+			<div class="logo"></div>
+			<div class="score is-green">
+				<span>Guesses:</span>
+				<span class="guesses-remaining">9</span>
+			</div>
 		</header>
 		<section class="feedback"></section>
 		<section class="input"></section>
@@ -19,6 +26,6 @@
 		</section>
 		<footer>Made by Joseph Bona. <a href="{{github repo}}">View Source</a></footer>
 	</section>
-	<script src="js/main.min.js"></script>
+	<!-- <script src="js/main.min.js" type="text/javascript"></script> -->
 </body>
 </html>
