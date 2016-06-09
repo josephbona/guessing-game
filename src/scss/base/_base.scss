@@ -1,4 +1,17 @@
+* {
+	box-sizing: border-box;
+}
 body {
-	font-family: $font-family-base;
+	font-family: $font-family-alt;
 	background: url(../images/bg.png);
+}
+.container {
+	max-width: 768px;
+	margin: auto;
+}
+audio {
+	display: none;
+}
+input, button {
+	outline: none;
 }

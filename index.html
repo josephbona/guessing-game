@@ -8,24 +8,34 @@
 	<link href="css/main.min.css" rel="stylesheet" />
 </head>
 <body>
-	<section class="game">
-		<header class="game-header">
+	<header class="game-header">
+		<div class="container">
 			<a class="launch-settings">
 				<i class="fa fa-gear"></i>
 			</a>
 			<div class="logo"></div>
 			<div class="score is-green">
 				<span>Guesses:</span>
-				<span class="guesses-remaining">9</span>
+				<span class="guesses-remaining">#</span>
 			</div>
-		</header>
-		<section class="feedback"></section>
-		<section class="input"></section>
-		<section class="keypad">
-			<div id="keypad"></div>
-		</section>
-		<footer>Made by Joseph Bona. <a href="{{github repo}}">View Source</a></footer>
-	</section>
-	<!-- <script src="js/main.min.js" type="text/javascript"></script> -->
+		</div>
+	</header>
+	<div class="container">
+		<main class="game">
+			<div class="game-body">
+				<section class="feedback"></section>
+				<div id="the-guess"></div>
+				<button class="submit">Submit</button>
+			</div>
+		</main>
+		<footer class="game-footer">Made by Joseph Bona. | <a target="_blank" href="https://github.com/josephbona/guessing-game">View Source</a></footer>
+	</div>
+	<audio controls>
+		<source src="audio/correct.mp3" type="audio/mpeg">
+	</audio>
+	<audio controls>
+		<source src="audio/incorrect.mp3" type="audio/mpeg">
+	</audio>
+	<script src="js/script.min.js" type="text/javascript"></script>
 </body>
 </html>

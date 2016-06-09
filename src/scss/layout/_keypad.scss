@@ -1,0 +1,46 @@
+.nmpd-grid {
+	width: 100%;
+
+	td {
+		width: 33.33%;
+
+		&:last-child {
+			button {
+				border-right: none;
+			}
+		}
+	}
+	button {
+		outline: none;
+		width: 100%;
+		padding: 25px 5px;
+		font-size: 25px;
+		background: none;
+		border: none;
+		border-bottom: 1px solid #ddd;
+		border-right: 1px solid #ddd;
+	}
+}
+.nmpd-display {
+	display: block;
+	width: 100%;
+	font-size: 30px;
+	border:none;
+	border-radius: 5px 5px 0 0;
+	padding: 10px;
+	text-align: center;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+}
+.submit {
+	width: 100%;
+	border: none;
+	display: block;
+	background: $brand-success;
+	padding: 10px;
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 0 0 5px 5px;
+}

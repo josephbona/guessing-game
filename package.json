@@ -1,0 +1,25 @@
+{
+  "name": "guessing-game",
+  "version": "1.0.0",
+  "description": "JS Guessing Game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephbona/guessing-game.git"
+  },
+  "author": "Joseph Bona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephbona/guessing-game/issues"
+  },
+  "homepage": "https://github.com/josephbona/guessing-game#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
