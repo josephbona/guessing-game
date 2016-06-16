@@ -16,7 +16,7 @@
 			<div class="logo"></div>
 			<div class="score is-green">
 				<span>Guesses:</span>
-				<span class="guesses-remaining">#</span>
+				<span data-ui="guessesRemaining" class="guesses-remaining">#</span>
 			</div>
 		</div>
 	</header>
@@ -25,7 +25,7 @@
 			<div class="game-body">
 				<section class="feedback"></section>
 				<div id="the-guess"></div>
-				<button class="submit">Submit</button>
+				<button data-ui="submit" onclick="playersGuessSubmission()" class="submit">Submit</button>
 			</div>
 		</main>
 		<footer class="game-footer">Made by Joseph Bona. | <a target="_blank" href="https://github.com/josephbona/guessing-game">View Source</a></footer>

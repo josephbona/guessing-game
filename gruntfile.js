@@ -9,6 +9,7 @@ module.exports = function(grunt) {
           'src/js/vendor/jquery-2.2.4.min.js',
           'src/js/vendor/jquery.numpad.js',
           'src/js/main.js',
+          'src/js/guessingGame.js'
         ],
         dest: 'js/script.js',
       },

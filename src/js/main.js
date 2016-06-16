@@ -5,34 +5,34 @@ jQuery(document).ready(function($) {
     	openOnEvent: false,
     	hideDecimalButton: true,
     	hidePlusMinusButton: true,
-    	displayTpl: '<input type="text" placeholder="Pick A Number" />'
+    	displayTpl: '<input data-ui="guess" type="text" placeholder="Pick A Number" />'
     });
     var guessesLeft = 5;
-    $('.guesses-remaining').text(guessesLeft);
+    $('[data-ui="guessesRemaining"]').text(guessesLeft);
     var $audio 			= $('audio'),
 		correctAudio 	= $audio[0];
 		incorrectAudio 	= $audio[1];
-    $('.submit').on('click', function(){
-    	var guessInput = $('.nmpd-display')
-    	var guess = guessInput.val();
-    	console.log(guess);
-    	guessInput.val('');
+    // $('.submit').on('click', function(){
+    // 	var guessInput = $('.nmpd-display');
+    // 	var guess = guessInput.val();
+    // 	console.log(guess);
+    // 	guessInput.val('');
 
-    	if(guessesLeft > 0) {
-	    	if (guess === '') {
+    // 	if(guessesLeft > 0) {
+	   //  	if (guess === '') {
 
-	    	} else if (guess == 23) {
-		    	//play correct audio
-		    	correctAudio.play();
-		    	guessInput.attr('placeholder', guess + ' is right!');
-	    	} else {
-	    		//play correct audio
-		    	incorrectAudio.play();
-		    	guessInput.attr('placeholder', guess + ' is not even close.');
-		    	guessesLeft--;
-	    	}
-	    	$('.guesses-remaining').text(guessesLeft);
-    	}
-    });
+	   //  	} else if (guess == 23) {
+		  //   	//play correct audio
+		  //   	correctAudio.play();
+		  //   	guessInput.attr('placeholder', guess + ' is right!');
+	   //  	} else {
+	   //  		//play correct audio
+		  //   	incorrectAudio.play();
+		  //   	guessInput.attr('placeholder', guess + ' is not even close.');
+		  //   	guessesLeft--;
+	   //  	}
+	   //  	$('.guesses-remaining').text(guessesLeft);
+    // 	}
+    // });
 
 });
