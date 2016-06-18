@@ -1,0 +1,11 @@
+.game {
+	max-width: 768px;
+	margin: auto;
+
+	@include min-width($screen-sm-min) {
+		margin: 20px auto;
+	}
+}
+.game-ui {
+	background-color: white;
+}

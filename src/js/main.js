@@ -5,13 +5,8 @@ jQuery(document).ready(function($) {
     	openOnEvent: false,
     	hideDecimalButton: true,
     	hidePlusMinusButton: true,
-    	displayTpl: '<input data-ui="guess" type="text" placeholder="Pick A Number" />'
+    	displayTpl: '<input data-ui="guess" type="text" placeholder="Pick A Number (1-100)" />'
     });
-    var guessesLeft = 5;
-    $('[data-ui="guessesRemaining"]').text(guessesLeft);
-    var $audio 			= $('audio'),
-		correctAudio 	= $audio[0];
-		incorrectAudio 	= $audio[1];
     // $('.submit').on('click', function(){
     // 	var guessInput = $('.nmpd-display');
     // 	var guess = guessInput.val();

@@ -15,3 +15,15 @@ audio {
 input, button {
 	outline: none;
 }
+.button {
+	display: inline-block;
+	text-decoration: none;
+	padding: 12px 25px;
+	border-radius: 4px;
+	font-size: 18px;
+
+	&--yellow {
+		background-color: $brand-yellow;
+		color: darken($brand-primary, 15%);
+	}
+}

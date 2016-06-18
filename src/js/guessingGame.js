@@ -3,11 +3,16 @@
 
 var playersGuess,
     winningNumber = generateWinningNumber(),
-    guessed = [];
-
-
+    guessedArray = [],
+	guessesRemaining = 5,
+    $audio 			= $('audio'),
+	correctAudio 	= $audio[0],
+	incorrectAudio 	= $audio[1];
 
 /* **** Guessing Game Functions **** */
+
+// Display guesses remaining
+$('[data-ui="guessesRemaining"]').text(guessesRemaining);
 
 // Generate the Winning Number
 
@@ -18,10 +23,14 @@ function generateWinningNumber(){
 // Fetch the Players Guess
 
 function playersGuessSubmission(){
-	playersGuess = parseInt($('[data-ui="guess"]').val());
-	$('[data-ui="guess"]').val('');
-	$('[data-ui="guess"]').attr('placeholder', 'You Guessed ' + playersGuess);
-	checkGuess();
+	if(guessesRemaining > 0) {
+		playersGuess = parseInt($('[data-ui="guess"]').val());
+		$('[data-ui="guess"]').val('');
+		$('[data-ui="guess"]').attr('placeholder', 'You Guessed ' + playersGuess);
+		checkGuess();
+	} else {
+		alert('You Lose!');
+	}
 }
 
 // Determine if the next guess should be a lower or higher number
@@ -33,13 +42,16 @@ function lowerOrHigher(){
 // Check if the Player's Guess is the winning number
 
 function checkGuess(){
-	if (guessed.indexOf(playersGuess)) {
-		guessed.push(playersGuess);
+	if(playersGuess )
+	if (guessedArray.indexOf(playersGuess) < 0) {
+		guessedArray.push(playersGuess);
+		guessesRemaining--;
+		$('[data-ui="guessesRemaining"]').text(guessesRemaining);
 		if(playersGuess == winningNumber) {
 			alert('Winner Winner Chicken Dinner');
 		}
 	} else {
-		$('[data-ui="guess"]').attr('placeholder', 'Dude, You Guessed ' + playersGuess + ' already!');
+		$('[data-ui="guess"]').attr('placeholder', 'You Already Guessed ' + playersGuess + '!');
 	}
 }
 

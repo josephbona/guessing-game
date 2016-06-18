@@ -13,6 +13,16 @@
 	color: #D9D9D9;
 	float: left;
 }
+.new-game {
+	@extend .button;
+	@extend .button--yellow;
+	float: left;
+	border-radius: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 65px;
+	line-height: 65px;
+}
 .score {
 	float: right;
 	text-align: center;
