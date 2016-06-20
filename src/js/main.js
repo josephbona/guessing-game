@@ -7,27 +7,5 @@ jQuery(document).ready(function($) {
     	hidePlusMinusButton: true,
     	displayTpl: '<input data-ui="guess" type="text" placeholder="Pick A Number (1-100)" />'
     });
-    // $('.submit').on('click', function(){
-    // 	var guessInput = $('.nmpd-display');
-    // 	var guess = guessInput.val();
-    // 	console.log(guess);
-    // 	guessInput.val('');
-
-    // 	if(guessesLeft > 0) {
-	   //  	if (guess === '') {
-
-	   //  	} else if (guess == 23) {
-		  //   	//play correct audio
-		  //   	correctAudio.play();
-		  //   	guessInput.attr('placeholder', guess + ' is right!');
-	   //  	} else {
-	   //  		//play correct audio
-		  //   	incorrectAudio.play();
-		  //   	guessInput.attr('placeholder', guess + ' is not even close.');
-		  //   	guessesLeft--;
-	   //  	}
-	   //  	$('.guesses-remaining').text(guessesLeft);
-    // 	}
-    // });
 
 });

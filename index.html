@@ -10,23 +10,20 @@
 <body>
 	<header class="game-header">
 		<div class="container">
-			<a href="#" class="new-game">New Game</a>
-			<!-- <a class="launch-settings">
-				<i class="fa fa-gear"></i>
-			</a> -->
-			<div class="logo"></div>
+			<a href="#" data-ui="newGame" class="new-game">New Game</a>
+			<a href="#" data-ui="hint" class="hint">Hint</a>
 			<div class="score is-green">
 				<span>Guesses:</span>
 				<span data-ui="guessesRemaining" class="guesses-remaining">#</span>
 			</div>
+			<div data-ui="guessedArray" class="guessed-array"></div>
 		</div>
 	</header>
 	<div class="container">
 		<main class="game">
 			<div class="game-body">
-				<section class="feedback"></section>
 				<div id="the-guess"></div>
-				<button data-ui="submit" onclick="playersGuessSubmission()" class="submit">Submit</button>
+				<button data-ui="submit" class="submit">Submit</button>
 			</div>
 		</main>
 		<footer class="game-footer">Made by Joseph Bona. | <a target="_blank" href="https://github.com/josephbona/guessing-game">View Source</a></footer>

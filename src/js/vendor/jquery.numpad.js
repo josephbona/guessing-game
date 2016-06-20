@@ -58,7 +58,7 @@
 				/** @var grid jQuery object containing the grid for the numpad: the display, the buttons, etc. */
 				var table = $(options.gridTpl).addClass('nmpd-grid');
 				nmpd.grid = table;
-				table.append($(options.rowTpl).append($(options.displayCellTpl).append(display).append($('<input type="hidden" class="dirty" value="0"></input>'))));
+				table.append($(options.rowTpl).append($(options.displayCellTpl).append(display).append($('<input type="hidden" class="dirty" value="0"></input><div data-ui="feedback"></div>'))));
 				// Create rows and columns of the the grid with appropriate buttons
 				table.append(
 					$(options.rowTpl)

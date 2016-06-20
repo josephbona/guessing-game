@@ -23,10 +23,37 @@
 	height: 65px;
 	line-height: 65px;
 }
+.hint {
+	color: white;
+	padding: 0 30px;
+	font-size: 17px;
+	line-height: 65px;
+}
+.guessed-array {
+	float: right;
+	line-height: 65px;
+	padding: 0 10px;
+	text-align: center;
+	min-width: 100%;
+	background-color: rgba(#000, .40);
+
+	span {
+		color: white;
+		display: inline-block;
+		text-decoration: line-through;
+		padding: 0 5px;
+		font-size: 20px;
+
+	}
+	@include min-width(420px) {
+		min-width: 150px;
+	}
+}
 .score {
 	float: right;
 	text-align: center;
 	font-size: 16px;
+	height: 65px;
 	padding: 9.5px 10px;
 	line-height: 1;
 	color: white;
@@ -37,7 +64,6 @@
 	.guesses-remaining {
 		font-size: 30px;
 		font-weight: bold;
-
 	}
 	&.is-green {
 		background-color: $brand-success;
