@@ -397,7 +397,6 @@ function checkGuess(){
 	if (playersGuess === winningNumber) {
 		$('[data-ui="feedback"]').html("You Win The Game!!<br><small>press new game to play again</small>").removeClass().addClass('is-good').slideDown();
 		correctAudio.play();
-		$('[data-ui="submit"]').attr("disabled", true);
 	} else if (playersGuess > 100 || playersGuess < 1 || playersGuess === 'NaN') {
 		$('[data-ui="feedback"]').html('Invalid Guess! Try Again.').removeClass().addClass('is-okay').slideDown();
 	} else {
